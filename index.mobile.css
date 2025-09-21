@@ -1,0 +1,478 @@
+/* index.mobile.css
+   Mobile-only overrides (<= 767px)
+   IMPORTANT: keep link to this file AFTER index.css
+*/
+
+@media (max-width: 767px) {
+
+  :root {
+    --primary: #3c28a0;
+    --accent: #f37c00;
+  }
+    .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg,#09023a,#2a1f7f);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+ footer {
+    padding: 20px 12px !important;
+    text-align: center !important;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+
+  /* wrapper inside footer: make it vertical and center items */
+  footer > div {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  /* ABOUT column: reduce size + center text */
+  footer > div > div:nth-child(1) {
+    flex: 0 0 auto !important;
+    min-width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+    padding: 0 8px !important;
+  }
+  footer > div > div:nth-child(1) h3 {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+  footer > div > div:nth-child(1) p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* support box (the headset / contact numbers) — target inner element */
+  footer > div > div:nth-child(1) > div {
+    margin-top: 10px !important;
+    padding: 10px !important;
+    max-width: 320px !important;
+    width: 100% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: rgba(30,45,66,0.95) !important;
+    border-left: 3px solid #2e9cca !important;
+    box-sizing: border-box !important;
+  }
+  footer > div > div:nth-child(1) > div i {
+    font-size: 18px !important;
+    margin-right: 8px !important;
+    color: #2e9cca !important;
+  }
+  footer > div > div:nth-child(1) > div div {
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+  }
+  footer > div > div:nth-child(1) > div div div {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+  }
+
+  /* Quick Links wrapper (2nd column in markup) */
+  footer > div > div:nth-child(2) {
+    flex: 0 0 auto !important;
+    min-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 8px !important;
+    text-align: center !important;
+  }
+  footer > div > div:nth-child(2) h3 {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+  /* centre list and reduce font */
+  footer > div > div:nth-child(2) ul {
+    display: inline-block !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    text-align: left !important;
+    font-size: 14px !important;
+  }
+  footer > div > div:nth-child(2) ul li {
+    line-height: 1.6 !important;
+  }
+  footer > div > div:nth-child(2) ul li a {
+    color: #ccc !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+  }
+
+  /* Service Links wrapper (3rd column) */
+  footer > div > div:nth-child(3) {
+    flex: 0 0 auto !important;
+    min-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 8px !important;
+    text-align: center !important;
+  }
+  footer > div > div:nth-child(3) h3 {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+  footer > div > div:nth-child(3) ul {
+    display: inline-block !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    text-align: left !important;
+    font-size: 14px !important;
+  }
+  footer > div > div:nth-child(3) ul li a {
+    color: #ccc !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+  }
+
+  /* Footer bottom area */
+  footer > div + div {
+    margin-top: 12px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  footer > div + div .fab {
+    margin: 0 8px !important;
+    font-size: 18px !important;
+  }
+  footer > div + div div {
+    font-size: 12px !important;
+    color: #aaa !important;
+  }
+ .contact-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 220px !important;       /* rectangle style, not too tall */
+    padding: 16px !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+
+    /* background adjustments */
+    background-size: 200% !important;  /* zoom effect */
+    background-position: center !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2) !important;
+    position: relative !important;
+  }
+
+  .contact-card > div[style*="rgba"] {
+    /* overlay fix: keep white overlay visible */
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    border-radius: 8px !important;
+  }
+
+  .contact-card .card-body {
+    width: 100% !important;
+    padding: 12px !important;
+    text-align: center !important;
+    color: #000 !important;
+    position: relative !important;
+    z-index: 2;
+  }
+
+  .contact-card .card-body h5 {
+    font-size: 18px !important;
+    padding: 6px 0 !important;
+    margin: 0 !important;
+  }
+
+  .contact-card .card-body p {
+    font-size: 14px !important;
+    margin: 4px 0 !important;
+  }
+
+  .contact-card i {
+    font-size: 16px !important;
+    margin-right: 6px !important;
+  }
+
+  .brochure-tag {
+    position: fixed;
+    left: 16px;              /* fixed to left side */
+    bottom: 20px;           /* distance from bottom */
+    right: auto;            /* avoid stretching */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /* limit width so it won't stretch across page */
+    width: auto;
+    max-width: 46%;
+    white-space: nowrap;    /* keep text on one line */
+    padding: 8px 12px;      /* smaller padding for mobile */
+    font-size: 13px;        /* smaller font */
+    border-radius: 28px;
+    box-shadow: 0 10px 24px rgba(46,42,133,0.18);
+    z-index: 99999;         /* above all site content */
+
+    /* ramp down transform jitter (optional) */
+    transition: transform 150ms ease, box-shadow 180ms ease;
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: auto;
+  }
+.contact-map-container {
+    display: block; /* stack vertically */
+  }
+
+  .contact-map-container .map {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .contact-map-container iframe {
+    width: 100%;
+    height: 260px; /* smaller height for mobile */
+  }
+ .contact-card .card-body h5,
+  .contact-card .card-body p,
+  .contact-card .card-body i {
+    font-weight: 600 !important;  /* bold text */
+    color: #000 !important;
+  }
+
+  .contact-card .card-body h5 {
+    font-size: 18px !important;
+    padding: 6px 0 !important;
+    margin: 0 !important;
+  }
+
+  .contact-card .card-body p {
+    font-size: 14px !important;
+    margin: 4px 0 !important;
+  }
+
+  /* Top info bar: stack on mobile */
+  .top-info-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+  .top-info-left, .top-info-right { 
+    display:block; 
+    text-align:center; 
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+  }
+  .logo img { 
+    height: 48px; 
+    width: auto; 
+    margin-left: 12px; 
+  }
+
+  /* MENU TOGGLE (hamburger on mobile) */
+  .menu-toggle, #agmMenuToggle { 
+    display: inline-flex !important; 
+    align-items:center; 
+    justify-content:center; 
+    background:transparent; 
+    border:0; 
+    padding:8px; 
+    font-size:20px; 
+    cursor:pointer; 
+    margin-left:auto; 
+    z-index: 1500;
+  }
+
+  /* Mobile nav */
+  nav .nav-links { 
+    display: none; 
+    list-style:none; 
+    margin:0; 
+    padding:0; 
+  }
+
+  body.mobile-menu-active nav .nav-links {
+    display: block;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    z-index: 1400;
+    padding: 12px 8px;
+  }
+
+  .nav-links li { margin: 6px 0; }
+  .nav-links a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 12px;
+    color: #1b2540;
+    text-decoration: none;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 15px;
+  }
+
+  /* Dropdowns — only first level (Services) visible */
+  .dropdown .dropdown-content {
+    display: none; /* hidden until toggled by JS */
+    margin-top: 6px;
+    background: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 6px 0;
+  }
+
+  .dropdown .show-me {
+    display: block !important; /* JS toggles this */
+  }
+
+  .dropdown-content a {
+    text-align: left;
+    padding: 10px 16px;
+    display: block;
+    color: #333;
+    font-size: 14px;
+  }
+
+  /* ❌ Hide deeper submenus on mobile */
+  .dropdown-sub .submenu {
+    display: none !important;
+  }
+
+  /* Hero */
+  .hero { height: 50vh; }
+  .hero video, .hero img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display:block; 
+  }
+
+  /* Services grid stacked */
+  .services-grid { 
+    display: block; 
+    padding: 12px; 
+  }
+  .service-card {
+    margin-bottom: 12px;
+    min-height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+  .service-card .overlay { 
+    position: absolute; 
+    left:0; right:0; bottom:0; 
+    padding:12px; 
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); 
+    color:#fff; 
+  }
+
+  /* About / Contact */
+  .about-container, .contact-container { 
+    padding: 12px; 
+    display: block; 
+  }
+  .about-image img { 
+    max-width: 100%; 
+    border-radius: 6px; 
+    margin-bottom: 12px; 
+  }
+  .contact-map-container { 
+    display:block; 
+    gap:12px; 
+  }
+  .contact-map-container .map { 
+    margin-bottom:12px; 
+  }
+
+  /* Footer stacked */
+  footer { 
+    padding: 18px 12px; 
+    text-align: center; 
+  }
+
+  /* Popup overlay (mobile-friendly) */
+  #overlay { 
+    display:none; 
+    position:fixed; 
+    inset:0; 
+    background:rgba(0,0,0,0.45); 
+    z-index:9998; 
+  }
+  #popup { 
+    display:none; 
+    position:fixed; 
+    z-index:9999; 
+    left:50%; top:50%; 
+    transform:translate(-50%,-50%); 
+    width:94%; 
+    max-width:420px; 
+    background:#fff; 
+    padding:14px; 
+    border-radius:10px; 
+  }
+
+  /* Small phones */
+  @media (max-width:420px) {
+    .logo img { height:44px; }
+    .hero { height:45vh; }
+    .service-card { min-height:130px; }
+    .brochure-tag { 
+      right: 12px; 
+      bottom: 72px; 
+      padding:10px 14px; 
+      font-size:14px; 
+    }
+  }
+
+}
